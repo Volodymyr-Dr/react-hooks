@@ -45,9 +45,11 @@ function App() {
             onChange={handleSearchChange}
           />
        </div>
+
        {/* <>Male<input type="checkbox" id="male" onChange={getGender}/></>
        <>Female<input type="checkbox" id="female" onChange={getGender}/></>
        <>Undefined<input type="checkbox" id="undefined" onChange={getGender}/></> */}
+       
        <ul>
             {contact.map(item => <Contact key={item.id} {...item} />)}
         </ul>
